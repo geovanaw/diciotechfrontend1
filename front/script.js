@@ -26,3 +26,21 @@ setTimeout(() => {
   const olaMundo = document.querySelector('.digitandoola_mundo');
   console.log = ativaDigitando(olaMundo, `<"OLÁ, MUNDO!">`, 50);
 }, 1500);
+
+
+/*
+function search_palavra () { //A função começa obtendo o valor inserido no campo de busca
+  let input = document.getElementById('searchbar').value
+  input=input.toLowerCase(); //Em seguida, o valor do campo de busca é convertido para letras minúsculas usando o método
+  let x = document.getElementsByClassName('animals'); //A função obtém todos os elementos HTML  e esses elementos são armazenados em uma variável chamada 'x'.
+  //um loop é executado para percorrer todos os elementos armazenados em 'x'. 
+    
+  for (i = 0; i < x.length; i++) { 
+      if (!x[i].innerHTML.toLowerCase().includes(input)) { // é verificado se o conteúdo do elemento em 'x[i]'  contém o valor buscado em letras minúsculas.
+          x[i].style.display="none"; //Se o valor buscado não estiver contido no conteúdo do elemento, a propriedade style.display é configurada como "none", o que faz o elemento ser ocultado.
+      }
+      else {
+          x[i].style.display="list-item";     //se o valor buscado estiver contido no conteúdo do elemento, o elemento será exibido como um item de lista.             
+      }
+  }
+}*/

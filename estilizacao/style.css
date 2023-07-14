@@ -9,7 +9,7 @@
 }
 
 body{
-   background-color: #4D448B; 
+   background-color: #2f4858; 
 }
 
 /*header, nav {
@@ -46,42 +46,55 @@ a:hover {
 }
 .logo {
    position: absolute; 
-   padding: 20px 30px; 
+   padding: 20px 70px; 
 }
+
 
 /*Barra de Pesquisa */
 .barraInt {
-   
     text-align: right;
     display: block;
     padding: 0px;
+    height: 36px;
+    width: 100%;
     background-color:  #DEFE47;
 }
 #searchbar{ 
    display: flex;
-   border-radius: 60px;
-   padding: 10px 10px 10px 10px;
-   width: 600px;
-   height: 50px;
-   margin: 5px 5px 5px 500px ;
+   border-radius: 20px;
+   padding: 5px;
+   width: 400px;
+   height: 30px;
+   margin: 20px;
    border-style: none;
+   font-size: 16px;
+   margin-left: auto;
 }
 
 /* Estilização do menu alfabeto */
-#alfabeto li  {
-   list-style: none;
-   display: inline-block;
-   margin: 0 0 0 10px; 
-}
-
-#alfabeto a  {
-   padding: 2px;
-   text-transform: uppercase;
-   color: #ffffff;
-   font-weight: bold;
-   font-size: 18px;
-   text-decoration: none;
-}
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px 20px 30px;
+ }
+ 
+ 
+ .alfabeto, li a  {
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    
+ }
+ .alfabeto li:hover{
+    background-color: #F47107;
+    border-radius: 0px 0px 15px 15px;
+    color: #000000;
+    padding: 20px 10px 5px 10px;
+ }
 
 /*Estilização animação "hello world"*/
 
@@ -100,4 +113,3 @@ div h1{
    opacity: 1;
    animation: pisca .5s infinite;  
 }
-
