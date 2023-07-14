@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Montserrat, sans-serif;
+   font-weight: bold;
+}
+
+body{
+   background-color: #4D448B; 
+}
+
+/*header, nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 10%;
+   background: transparent;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+}*/
+
+.menu {
+   text-align: center;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   padding: 50px 40px;     
+}
+.menu a{
+   color: #DEFE47;
+   text-align: center;
+   padding: 80px 10px 25px 10px;
+   text-decoration: none;
+}
+a:hover {
+   border-radius: 20px;
+   background-color: #DEFE47;
+   color: #000000;
+}
+.logo {
+   position: absolute; 
+   padding: 20px 30px; 
+}
+
+/*Barra de Pesquisa */
+.barraInt {
+   
+    text-align: right;
+    display: block;
+    padding: 0px;
+    background-color:  #DEFE47;
+}
+#searchbar{ 
+   display: flex;
+   border-radius: 60px;
+   padding: 10px 10px 10px 10px;
+   width: 600px;
+   height: 50px;
+   margin: 5px 5px 5px 500px ;
+   border-style: none;
+}
+
+/* Estilização do menu alfabeto */
+#alfabeto li  {
+   list-style: none;
+   display: inline-block;
+   margin: 0 0 0 10px; 
+}
+
+#alfabeto a  {
+   padding: 2px;
+   text-transform: uppercase;
+   color: #ffffff;
+   font-weight: bold;
+   font-size: 18px;
+   text-decoration: none;
+}
+
+/*Estilização animação "hello world"*/
+
+div h1{
+   animation: inicializar .7s forwards;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: space-around;
+   align-items: center;
+   gap: 60px;
+}
+
+.digitandohello_world::after{
+   content: '';
+   margin-left: 5px;
+   opacity: 1;
+   animation: pisca .5s infinite;  
+}
+
