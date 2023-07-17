@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+ }
+ 
+ body{
+    background-image: linear-gradient(to right, #2F4858, #af43be);
+    background-image: cover;
+ }
+ 
+ /*header, nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+ }*/
+ 
+ .menu {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 50px 40px;   
+    font-weight: bold; 
+ }
+ .menu a{
+    color: #DEFE47;
+    text-align: center;
+    padding: 80px 10px 25px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    
+ }
+ a:hover {
+    border-radius: 20px;
+    background-color: #DEFE47;
+    color: #000000;
+    transform: scale(1.1);
+ }
+ 
+ .acessibilidade {
+    position:absolute;
+    display:block;
+    margin-left: auto;
+    padding-right: 30px;
+    right: 0;
+    top: 0;
+ }
+ 
+ .logo {
+    position: absolute; 
+    padding: 20px 70px; 
+ }
+ 
+ /*Barra de Pesquisa */
+ .barraInt {
+     text-align: right;
+     display: block;
+     padding: 0px;
+     height: 38px;
+     width: 100%;
+     background-color:  #DEFE47;
+     justify-content: space-around;
+     
+ }
+ #searchbar{ 
+    display: flex;
+    border-radius: 20px;
+    padding: 5px;
+    width: 600px;
+    height: 30px;
+    border-style: none;
+    font-size: 16px;
+    margin-left: 450px;
+    justify-content: space-around;
+    padding-left:25px;
+    background-image: url(./midia/ícone.lupa.png);
+    background-position: right center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+ 
+ }
+ 
+ /* Estilização do menu alfabeto */
+ li {
+     list-style: none;
+     display: inline-block;
+     margin: 0px 20px 10px 10px;
+  }
+  
+  
+  .alfabeto, li a  {
+     text-align: center;
+     padding: 0;
+     text-transform: uppercase;
+     color: #ffffff;
+     font-weight: bold;
+     font-size: 18px;
+     text-decoration: none;
+     
+  }
+ 
+  .alfabeto li:hover{
+     background-color: #8386f5;
+     border-radius: 0px 0px 15px 15px;
+     color: #000000;
+     padding: 20px 10px 5px 10px;
+  }
+ 
+  .digitandoola_mundo{
+    margin-left: 600px;
+    margin-bottom: 250px;
+    color:#8386f5;
+    gap: 60px;
+ 
+ }
+ 
+  .digitandohello_world {
+    margin-left: 600px;
+    margin-bottom: 250px;
+    color: #DEFE47;
+    animation: inicializar .7s forwards;
+    gap: 60px;
+ 
+ }
+ 
+ main { /* retirado do CSS url de background*/
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ 
+ .digitandoola_mundo:after{
+    content: '';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .5s infinite;  
+ }
+ 
+ h2 {
+    box-sizing: border-box;
+    width: 280px;
+    height: 35px;
+    border-radius: 60px;
+    background-color: yellow;
+    align-items: center;
+    margin-left: 70px;
+    font-size: 20px;
+    
+    
+  }
+  .palavraDia {
+    width: 370px;
+    height: 270px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: white;
+    align-items: center;
+    margin-left: 100px;
+  }
+ 
+ footer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8386f5;
+    padding: 0px 20px;
+    
+ }
+ .corLaranja{
+    color: orange
+ }
+ .nav2{
+    align-items: center;
+    color: #DEFE47;
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+ 
+ }
