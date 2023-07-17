@@ -133,7 +133,8 @@
  
  }
  
- main { /* retirado do CSS url de background*/
+ #background { /* retirado do CSS url de background*/
+    background-image: url(../midia/background_homepage.png);
     background-size: cover;
     background-repeat: no-repeat;
  }
