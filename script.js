@@ -28,35 +28,18 @@ function ativaDigitando(elemento, frase, velocidade) {
     ativaDigitando(olaMundo, `<"OLÁ, MUNDO!">`, 55);
   }, 1500);
   
-  /*function ativaDigitando(elemento, frase, velocidade) {
-    const arrayTexto = frase.split(''); /o espaçamento de letras pelo inner.html.split só se dá com os parentes vazios/
-    /*elemento.innerHTML = '';
-  
-    arrayTexto.forEach((letra, i) => {
-        setTimeout(() => { // o setTimeout é uma função antiva do js//
-            elemento.innerHTML += letra;
-  
-            if (i === arrayTexto.length -1) {
-                setTimeout(() =>{
-                    elemento.innerHTML = '';
-                    ativaDigitando(elemento, '', velocidade);
-                }, 1000); 
-            }
-        }, velocidade * i)
-    });
-  }
-  
-  const titulo = document.querySelector('.digitandohello_world');
-  ativaDigitando(titulo, `<"HELLO WORLD">`, 50);
-  /*const titulos = document.querySelectorAll('.digitando');
-  titulos.forEach((titulo) => {
-  ativaLetra(titulo);*/
-  
-  // para chamar o Olá mundo na linha abaixo, utilizei novamente a função .js setTimeout com outra const para que pudesse ativar a segunda frase//
-  /*setTimeout(() => {
-    const olaMundo = document.querySelector('.digitandoola_mundo');
-    ativaDigitando(olaMundo, `<"OLÁ, MUNDO!">`, 55);
-  }, 1500); // Aguarda 1,5 segundos antes de exibir a próxima frase*/
-  
-  /*Para que o efeito possa funcionar, o console.log que aqui está representado
-  pelo ativaDigitando,precisa estar abaixo do comando global representado por const titulo*/
+  //Função de buscar palavra conectado com a a_api.html. Só funciona se estiver integrado ao banco de dados
+  function search_palavra() { 
+    let input = document.getElementById('searchbar').value // obtem o valor do texto digitado //
+    input = input.toLowerCase(); //converte em letras minusculas o que for digitado no campo de busca //
+    let x = document.getElementsByClassName('palavraA'); //retorna uma coleção de elementos HTML que possuem essa classe 'termos' da pasta letra_a. //
+      
+    for (i = 0; i < x.length; i++) { 
+        if (x[i].innerHTML.toLowerCase().charAt(0) !== input.charAt(0)) { //considera o primeiro caractere //
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}

@@ -116,27 +116,34 @@
      padding: 20px 10px 5px 10px;
   }
  
+  .conteudoPrincipal {
+   
+   font-size: 35px;
+   width: 100%;
+   height: 100%;
+  
+}
   .digitandoola_mundo{
-    margin-left: 600px;
-    margin-bottom: 250px;
+    margin-bottom: 20px;
     color:#8386f5;
     gap: 60px;
  
  }
- 
+
   .digitandohello_world {
-    margin-left: 600px;
-    margin-bottom: 250px;
     color: #DEFE47;
     animation: inicializar .7s forwards;
     gap: 60px;
  
  }
  
+ 
+
  #background { /* retirado do CSS url de background*/
     background-image: url(../midia/background_homepage.png);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 300px;
  }
  
  .digitandoola_mundo:after{

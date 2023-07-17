@@ -15,17 +15,16 @@
       
 
       <nav class="menu">
-           <a href="#">Home</a>
-           <a href="#">Sobre Nós</a>
-           <a href="#">Áreas de TI</a>
-           <a href="#">Quiz</a>
+           <a href="index.html">Home</a>
+           <a href="sobre.html">Sobre Nós</a>
+           <a href="area_ti.html">Áreas de TI</a>
        </nav>
 
-      <div class ="barraInt">
-     <input id="searchbar" onkeyup="funcao()" type="text" name="busca" placeholder="Buscar termos...
-     "> <!--COLOCAR A FUNÇÃO DE PESQUISA-->
-     <button class="botaoAdoc" type="submit"></button> <!--IMAGEM DE PESQUISAR--> 
-      <!--FALTA COLOCAR A IMAGEM DO MICROFONE DENTRO DO INPUT DE PESQUISA, vi q tem como colocar no CSS--></div>
+       <div class ="barraInt">
+         <input id="searchbar" onkeyup="searchPalavra()" type="text" name="busca" placeholder="Buscar palavra..."> <!--Essa é a entrada para funcionar o javascript no campo de busca -->
+         <button class="botaoAdoc" type="submit"></button> <!--IMAGEM DE PESQUISAR--> 
+          <!--FALTA COLOCAR A IMAGEM DO MICROFONE DENTRO DO INPUT DE PESQUISA, vi q tem como colocar no CSS-->
+       </div>
 
    <div class = "alfabeto">
       <ol> 
@@ -60,22 +59,23 @@
    </header>
 
    <main>
-      <section class="palavraA"> <!--Parte branca-->
-         <h1 class="corBranco">API</h1>
+      <section class="fundoBranco"> <!--Parte branca-->
+         <h1>API</h1>
             <P>As APIs são um conjunto de padrões que fazem parte de uma interface. As APIs permitem a criação de plataformas 
                de maneira mais simples e prática para desenvolvedores. A partir de APIs, é possível criar softwares, aplicativos, 
                programas e plataformas diversas. Por exemplo, apps desenvolvidos para celulares Android e iPhone (iOS) são criados a partir de padrões definidos e 
                disponibilizados pelas APIs de cada sistema operacional.</P>
       </section>
       
-      <section class="quiz">
-         <h1 class="corLaranja">QUIZ</h1><!--Cor laranja -->
-      </section>
+      <section class="quiz"> <!--Colocar a classe quiz com o fundo verde, vai ficar verde na palavra b_browser também-->
+            <h1 class="corLaranja">QUIZ</h1><!--Cor laranja -->
+      
       
             <h2>Marque a afirmação correta: </h2>
             <p>APIs só servem para celular.</p>
             <p>  Um site pode ser uma API.</p>
-      
+      </section>
+
       <section class="letrasA"> <!--Palavras na cor branca-->
          <ol> 
             <li class="corBranco"><a href="">Abandonware</a></li>
