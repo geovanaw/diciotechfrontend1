@@ -288,8 +288,12 @@ body{
    color: #F47107;
    padding: 100px 20px 20px 110px;
 }
-.quiz{
 
+/* ESTILIZAÇÃO QUIZ */
+
+.quiz_fullstack{
+   display: flex;
+   justify-content: space-between;
    background-color: #DEFE47;
    border-radius: 30px;
    padding: 50px 50px 50px 50px;
@@ -298,6 +302,7 @@ body{
    align-items: center;
 
 }
+
 .afir{
 
    padding: 0px 0px 30px 0px;

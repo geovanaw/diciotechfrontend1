@@ -67,12 +67,27 @@
                disponibilizados pelas APIs de cada sistema operacional.</P>
       </section>
 
-      <h1 class="quizN">QUIZ</h1><!--Cor laranja -->
-      <section class="quiz"> <!-- Parte do QUIZ Colocar a classe quiz com o fundo verde, vai ficar verde na palavra b_browser também-->
-            <h2 class="afir">Marque a afirmação correta: </h2>
-            <p>APIs só servem para celular.</p>
-            <p>  Um site pode ser uma API.</p>
-      </section>
+   <!-- CÓDIGO QUE SERÁ UTILIZADO NA FUNÇÃO JAVASCRIPT DO QUIZ - NÃO ALTERAR SEM AVISO-->
+
+      <div class="quiz_fullstack">
+         <div class="quiz_pergunta">
+            <h2> QUIZ DICIOTECH</h2>
+            <h4>Qual é a melhor turma SENAC-PE?</h4>
+            <div class="quiz_respostas" id="mensagem" valid="valid">
+               <!-- precisa colocar a função valid no lugar correto, mas já pode mexer na estilização-->
+               <div id="mensagem" valid="valid">
+               <input type="radio" name="a1">
+               <span></span>a- Devas Full Stack SENAC-PE</span><br>
+               </div>
+
+               <input type="radio" name="a1">
+               <span>b- Outros</span></br>
+               
+               <button onclick="verificarResposta()">Enviar</button>
+
+            </div>
+         </div> 
+     </div>
    </main>
 
    
@@ -118,6 +133,6 @@
 
    </footer>
 
-   <script src="script.js"></script>
+   <script src="../script.js"></script>
  </body>
  </html>
