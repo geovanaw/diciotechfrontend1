@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilizacao/style.css">
+    <title>Diciotech</title>
+ </head>
+ <body>
+   <header class="header">
+
+      <div class="logo">
+         <img src= "../midia/dicio_tech_logo vazada BRANCO Completa.png" width="300">
+      </div> 
+       
+      <section class="acessibilidade">
+         <img src="../midia/ícone.acessibilidade.png" width="70">
+      </section>
+
+      <nav class="menu">
+           <a href="index.html">Home</a>
+           <a href="sobre.html">Sobre Nós</a>
+           <a href="area_ti.html">Áreas de TI</a>
+       </nav>
+
+      <div class ="barraInt">
+     <input id="searchbar" onkeyup="funcao()" type="text" name="busca" placeholder="Buscar termos...
+     "> <!--COLOCAR A FUNÇÃO DE PESQUISA-->
+     <button class="botaoAdoc" type="submit"></button> <!--IMAGEM DE PESQUISAR--> 
+      <!--FALTA COLOCAR A IMAGEM DO MICROFONE DENTRO DO INPUT DE PESQUISA, vi q tem como colocar no CSS--></div>
+
+   <div class = "alfabeto">
+      <ol> 
+         <li><a href="letra_a.html">A</a></li>
+         <li><a href="">B</a></li>
+         <li><a href="">C</a></li>
+         <li><a href="">D</a></li>
+         <li><a href="">E</a></li>
+         <li><a href="">F</a></li>
+         <li><a href="">G</a></li>
+         <li><a href="">H</a></li>
+         <li><a href="">I</a></li>
+         <li><a href="">J</a></li>
+         <li><a href="">K</a></li>
+         <li><a href="">L</a></li>
+         <li><a href="">M</a></li>
+         <li><a href="">N</a></li>
+         <li><a href="">O</a></li>
+         <li><a href="">P</a></li>
+         <li><a href="">Q</a></li>
+         <li><a href="">R</a></li>
+         <li><a href="">S</a></li>
+         <li><a href="">T</a></li>
+         <li><a href="">U</a></li>
+         <li><a href="">V</a></li>
+         <li><a href="">W</a></li>
+         <li><a href="">X</a></li>
+         <li><a href="">Y</a></li>
+         <li><a href="">Z</a></li>
+      </ol>
+   </div>
+   </header>
+
+<main>
+      <section id="background"> 
+         <div class="conteudoPrincipal">
+            <h1 class="digitandohello_world"></h1> <!--espaço em branco para adicionar função .js de digitar-->
+            <h1 class="digitandoola_mundo"></h1> <!--espaço em branco para adicionar função .js de digtar-->  
+         </div>
+
+         <section class="PD">
+         <h2><strong> Palavra do dia </strong></h2> 
+         </section>
+
+         <div class="palavraDia"> <!--Parte branca e verde--> 
+            <p class="palavra"><strong>BODY</strong></p>
+            <p>Do português CORPO, é usado para identificar o corpo do texto. </p><br>
+            <p>É o elemento do HTML que representa o conteúdo de um documento HTML. Imagine que você está construindo um aplicativo de cadastro de usuários. Quando um novo usuário preenche o formulário de registro e envia os dados, uma requisição é feita ao servidor. Os dados do usuário, como nome, email e senha, são incluídos no "body" dessa requisição.
+               </p>
+         </div>
+ 
+         <div id="maisPesq"> 
+            <h3 class="corBranca">Mais pesquisadas</h3>
+               <ol> <!--PRECISA ADICIONAR li e tag href para todas as palavras conforme o projeto feito pelo design-->
+                  <li class="corBranca"><a href="a_api.html">API</a></li>
+                  <li class="corBranca"><a href="b_browser.html">Browser</a></li>
+                  <li class="corBranca">Cost</li>
+                  <li class="corBranca">Doctype</li>
+                  <li class="corBranca">Else</li>
+                  <li class="corBranca">Get</li>
+                  <li class="corBranca">Head</li>
+               </div>
+   </section>
+
+</main>
+
+<footer>
+   <!--Barra roxa-->
+         <section class="nav1">
+   <!--Titilo do Diciotech no footer-->
+            <h3 class="dicio">Diciotech</h3>
+   <!---------------FIM------------------>
+
+   <!--Texto de apresentção do footer-->
+            <p class="turmaT">Nós, alunas da turma afirmativa de Desenvolvimento Full Stack do SENAC-PE, criamos esse dicionário <br> tecnológico para ajudar profissionais em formação que nunca tiveram contato com o inglês.</p>
+         </section>
+   <!-----------------FIM---------------->
+
+   <!--SUB-TITULO APOROVEITE A JORNADA "LARANJA"-->
+         <section class="nav2">
+               <h3 class="jornada">Aproveite a jornada</h3>
+   <!--LINK PARA O SOBRE NÓS E Área de TI-->
+               <p class="sobre"><a href="sobre.html">Sobre nós</a></p>
+               <p class="area"><a href="area_ti.html">Áreas de TI</a></p>
+         </section>
+   <!---------------FIM--------------------->
+
+   <!--SECTION DOS ICONES DE ACESSIBILIDADE SOM, AUMENTAR E DIMINUIR-->
+
+   <!-- icone do som -->
+
+         <section class="iconsF">
+            <img class="som" src="../midia/ícone.audio.png" alt="icone som" width="50"> 
+            <img class="mais" src="../midia/ícone.volume.png" alt="icon mais" width="20">
+             <img class="menos" src="../midia/icone.volume+.png" alt="icon menos" width="20">
+         </section>
+
+   <!------------FIM------------->
+
+   <!--Icone do mais e menos, ESSE ICONE PRECISA SER MUDADO NÃO ESTÁ BOM-->
+            <!--Colocar os ícones de acessibilidade (VOLUME) E DEPOIS A FUNCIONALIDADE-->
+               <!--Colocar o ícone de diminuir volume-->
+               <!-- <img src="" alt="icone++" width="25">  Colocar o ícone de aumentar volume-->
+   <!---------------FIM------------>
+
+
+   </footer>
+
+ <script src="../script.js"></script>
+</body>
+</html>

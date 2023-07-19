@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik:wght@300;400;500&display=swap');
+
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+
+body{
+   background-image: linear-gradient(to right, #2F4858, #af43be);
+   background-image: cover;
+}
+
+.menu {
+   text-align: center;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   padding: 50px 40px;   
+   font-weight: bold; 
+}
+.menu a{
+   color: #DEFE47;
+   text-align: center;
+   padding: 80px 10px 25px 10px;
+   text-decoration: none;
+   font-size: 20px;
+   
+}
+.menu a:hover {
+   font-size: 20px;
+   border-radius: 20px;
+   background-color: #DEFE47;
+   color: #000000;
+   transform: scale(1.1);
+}
+
+.acessibilidade {
+  position:absolute;
+  display:block;
+  margin-left: auto;
+  right: 0;
+  top: 0;
+  padding: 15px 50px; 
+}
+.logo {
+   position: absolute; 
+   padding: 10px 70px; 
+}
+
+/*Barra de Pesquisa */
+.barraInt {
+  text-align: right;
+  display: block;
+  padding-top: 8px;
+  height: 45px;
+  width: 100%;
+  background-color:  #DEFE47;
+  justify-content: space-around;
+    
+}
+#searchbar{ 
+   display: flex;
+   border-radius: 20px;
+   padding: 5px;
+   width: 600px;
+   height: 30px;
+   border-style: none;
+   font-size: 16px;
+   margin-left: 450px;
+   justify-content: space-around;
+   padding-left:25px;
+   background-image: url(./midia/ícone.lupa.png);
+   background-position: right center;
+   background-size: 25px;
+   background-repeat: no-repeat;
+}
+
+/* Estilização do menu alfabeto */
+.alfabeto li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 10px 10px 10px;
+ }
+ 
+ .alfabeto li a  {
+    padding: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;   
+ }
+ .alfabeto, li a  { /*CENTRALIZANDO O ALFABETO INTEIRO DO MENU*/
+   text-align: center;
+ }
+
+ .alfabeto li:hover{
+    background-color: #8386f5;
+    border-radius: 0px 0px 15px 15px;
+    color: #000000;
+    padding: 5px 10px 5px 10px;
+ }
+
+ .conteudoPrincipal {
+  font-size: 35px;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.digitandoola_mundo{
+   margin-left: 350px;
+   margin-bottom: 250px;
+   color:#8386f5;
+   gap: 60px;
+   align-items: center;
+   font-size: 75px; 
+}
+
+ .digitandohello_world {
+   margin-left: 380px;
+   margin-bottom: 10px;
+   color: #DEFE47;
+   animation: inicializar .7s forwards;
+   gap: 60px;
+   font-size: 60px; 
+
+}
+
+
+#background { /* retirado do CSS url de background*/
+   background-image: url(../midia/background_homepage.png);
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 300px;
+}
+
+.digitandoola_mundo:after{
+   content: '';
+   margin-left: 5px;
+   opacity: 1;
+   animation: pisca .5s infinite;  
+}
+
+.PD h2 {
+   color: #35505F;
+   padding: 5px;
+   box-sizing: border-box;
+   width: 283.66px;
+   height: 48.43px;
+   border-radius: 25px;
+   background-color: #DEFE47;
+   text-align: center;
+   margin-left: 68px;
+   font-size: 25px;
+}
+
+.palavra {
+   font-size: 25px;
+   color: #35505F;
+   padding-bottom: 15px;
+}
+
+
+ .palavraDia {
+   font-size: 18px;
+   color: #35505F;
+   width: 712.62px;
+   height: 318.26px;
+   padding: 50px; /*Centralizar o texto inteiro dentro da caixa*/
+   box-sizing: border-box;
+   background-color: white;
+   text-align: justify;
+   align-items: center;
+   margin-left: 91.72px;
+ }
+
+
+ /* Estilizando as palavras mais pesquisadas */
+ #maisPesq {
+   margin-top: 50px;
+   margin-left: 91.72px;
+ }
+  #maisPesq h3 {
+   font-size: 25px;
+   margin-bottom: 25px;
+  }
+
+  #maisPesq a {
+   font-size: 20px;
+  }
+
+  .corBranca a {
+   color: white;
+   text-decoration: none;
+  }
+
+  #maisPesq li {
+   display: inline-block;
+  }
+
+  #maisPesq li, h3 {
+   padding: 5px; /* Para separar as palavras */
+   color: white;
+   font-size: 18px;
+   text-decoration: none;
+   list-style: none;
+  }
+
+
+ /* -------------------FOOTER------------------------*/
+ footer{
+   color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  "#AF43BE"; 
+    padding: 20px 20px;
+    display: flex;
+ }
+.nav1 {
+   margin-left: 300px;
+}
+.dicio{
+   font-size: 25px;
+   padding: 10px;
+}
+.turmaT{
+   margin-left: 100px;
+   font-size: 18px;
+   margin: 10px;
+}
+.jornada{
+   font-size: 25px;
+   color: white;
+   height: 40px;
+   text-decoration: none;
+}
+
+.nav2 a {
+   font-size: 18px;
+   color: white;
+   text-decoration: none;
+   list-style: none;
+}
+.sobre{
+   padding: 1px;
+   height: 30px;
+   color: white;
+}
+.area{
+   padding: 1px;
+   color: white;
+}
+.som{
+   margin-bottom: 20px;
+   margin-right: 170px;
+   display: flex;
+}
+.mais {
+   margin: 3px;
+}
+.menos{
+   margin: 10px;
+}
+
+
+/*-----------------PÁGINA API-------------- */
+
+.Api{
+   background-color: white; 
+   margin-left: 20px;
+   margin-right: 20px;
+   padding: 100px;
+}
+.TituloA{
+   padding: 20px 20px 20px 0px;
+}
+.quizN{
+   color: #F47107;
+   padding: 100px 20px 20px 110px;
+}
+.quiz{
+
+   background-color: #DEFE47;
+   border-radius: 30px;
+   padding: 50px 50px 50px 50px;
+   margin-left: 100px;
+   margin-right: 100px;
+   align-items: center;
+
+}
+.afir{
+
+   padding: 0px 0px 30px 0px;
+}
+
+
+/*--------------------SOBRE NÓS------------------*/
+
+/*Cor, alinhamento e lergura do TITULO Boas Vindas*/
+ .mainSobre{
+   text-align: center;
+   align-items: center;
+   height: 700px;
+   padding: 100px;
+
+ }
+ .boasVindas{
+   font-size: 25px;
+   color: #DEFE47;
+   text-align: center;
+   width: 600px;
+   padding: 20px 10px 20px 200px;
+ }
+ /*Cor, tamanho e todos os alinhamentos do TEXTO de Boas Vindas*/
+.fundoBranco{
+   font-size: 20px;
+   background-color: white;
+   border-radius: 30px;
+   margin-left: 200px;
+   margin-right: 200px;
+   padding: 50px 50px 50px 50px;
+   align-items: center;
+   text-align: center;
+}
