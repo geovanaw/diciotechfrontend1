@@ -10,11 +10,11 @@
    <header class="header">
 
       <div class="logo">
-         <img src= "../midia/dicio_tech_logo vazada BRANCO Completa.png" width="250">
+         <img src= "../midia/dicio_tech_logo vazada BRANCO Completa.png" width="300">
       </div> 
        
       <section class="acessibilidade">
-         <img src="../midia/ícone.acessibilidade.png" width="100">
+         <img src="../midia/ícone.acessibilidade.png" width="70">
       </section>
 
       <nav class="menu">
@@ -68,56 +68,73 @@
             <h1 class="digitandoola_mundo"></h1> <!--espaço em branco para adicionar função .js de digtar-->  
          </div>
 
+         <section class="PD">
          <h2><strong> Palavra do dia </strong></h2> 
+         </section>
 
          <div class="palavraDia"> <!--Parte branca e verde--> 
-            <p><strong>BUG</strong></p>
-            <p>É um erro ou falha que ocorre num sistema ou programa de computador, resultando num comportamento incorreto ou fora do que tenha sido pretendido pela pessoa desenvolvedora.</p>
+            <p class="palavra"><strong>BODY</strong></p>
+            <p>Do português CORPO, é usado para identificar o corpo do texto. </p><br>
+            <p>É o elemento do HTML que representa o conteúdo de um documento HTML. Imagine que você está construindo um aplicativo de cadastro de usuários. Quando um novo usuário preenche o formulário de registro e envia os dados, uma requisição é feita ao servidor. Os dados do usuário, como nome, email e senha, são incluídos no "body" dessa requisição.
+               </p>
          </div>
-
-      <section id="MP"> <!-------------SEÇÃO PARA AS PALAVRAS MAIS PESQUISADAS----------->
-      <div id="maisPesq"> <!-----DIV PARA DIVIDIR AS PALAVRAS EM 2 COLUNAS, SE------->
+ 
+         <div id="maisPesq"> 
             <h3 class="corBranca">Mais pesquisadas</h3>
-         <ol id="palavrasMP"> <!--PRECISA ADICIONAR li e tag href para todas as palavras conforme o projeto feito pelo design-->
-            <li class="corBranca"><a href="a_api.html">API</a></li>
-            <li class="corBranca"><a href="b_browser.html">Browser</a></li>
-            <li class="corBranca">Cost</li>
-            <li class="corBranca">Doctype</li>
-            <li class="corBranca">Else</li>
-            <li class="corBranca">Get</li>
-         </ol>
-
-         <ol id="palavrasMeio">
-            <li class="corBranca">Head</li>
-            <li class="corBranca">Input</li>
-            <li class="corBranca">JavaScript</li>
-            <li class="corBranca">Keyword</li>
-            <li class="corBranca">Label</li>
-            <li class="corBranca">Main</li>
-            <li class="corBranca">Name</li>
-         </ol>
-         </div>
-      </section>
+               <ol> <!--PRECISA ADICIONAR li e tag href para todas as palavras conforme o projeto feito pelo design-->
+                  <li class="corBranca"><a href="a_api.html">API</a></li>
+                  <li class="corBranca"><a href="b_browser.html">Browser</a></li>
+                  <li class="corBranca">Cost</li>
+                  <li class="corBranca">Doctype</li>
+                  <li class="corBranca">Else</li>
+                  <li class="corBranca">Get</li>
+                  <li class="corBranca">Head</li>
+               </div>
    </section>
 
 </main>
 
 <footer>
-   <h3>Diciotech</h3>
-   <p>Nós, alunas da turma afirmativa de Desenvolvimento Full Stack do SENAC-PE, criamos esse dicionário tecnológico para ajudar profissionais em formação que nunca tiveram contato com o inglês.</p>
+   <!--Barra roxa-->
+         <section class="nav1">
+   <!--Titilo do Diciotech no footer-->
+            <h3 class="dicio">Diciotech</h3>
+   <!---------------FIM------------------>
 
-   <div class="nav2">
-      <h3 class="corLaranja">Aproveite a jornada</h3>
-      <p><a href="./sobre.html">Sobre nós</a></p>
-      <p><a href="./area_ti.html">Áreas de TI</a></p>
-   </div>
+   <!--Texto de apresentção do footer-->
+            <p class="turmaT">Nós, alunas da turma afirmativa de Desenvolvimento Full Stack do SENAC-PE, criamos esse dicionário <br> tecnológico para ajudar profissionais em formação que nunca tiveram contato com o inglês.</p>
+         </section>
+   <!-----------------FIM---------------->
 
-      <div class id="iconsAces">
-         <img src="../midia/ícone.audio.png" alt="iconeVol" width="25"> <!--Colocar os ícones de acessibilidade (VOLUME) E DEPOIS A FUNCIONALIDADE-->
-         <img src="../midia/ícone.volume.png" alt="icone--" width="25"> <!--Colocar o ícone de diminuir volume-->
-        <!-- <img src="" alt="icone++" width="25">  Colocar o ícone de aumentar volume-->
-      </div>
- </footer>
+   <!--SUB-TITULO APOROVEITE A JORNADA "LARANJA"-->
+         <section class="nav2">
+               <h3 class="jornada">Aproveite a jornada</h3>
+   <!--LINK PARA O SOBRE NÓS E Área de TI-->
+               <p class="sobre"><a href="sobre.html">Sobre nós</a></p>
+               <p class="area"><a href="area_ti.html">Áreas de TI</a></p>
+         </section>
+   <!---------------FIM--------------------->
+
+   <!--SECTION DOS ICONES DE ACESSIBILIDADE SOM, AUMENTAR E DIMINUIR-->
+
+   <!-- icone do som -->
+
+         <section class="iconsF">
+            <img class="som" src="../midia/ícone.audio.png" alt="icone som" width="50"> 
+            <img class="mais" src="../midia/ícone.volume.png" alt="icon mais" width="20">
+             <img class="menos" src="../midia/icone.volume+.png" alt="icon menos" width="20">
+         </section>
+
+   <!------------FIM------------->
+
+   <!--Icone do mais e menos, ESSE ICONE PRECISA SER MUDADO NÃO ESTÁ BOM-->
+            <!--Colocar os ícones de acessibilidade (VOLUME) E DEPOIS A FUNCIONALIDADE-->
+               <!--Colocar o ícone de diminuir volume-->
+               <!-- <img src="" alt="icone++" width="25">  Colocar o ícone de aumentar volume-->
+   <!---------------FIM------------>
+
+
+   </footer>
 
  <script src="../script.js"></script>
 </body>
