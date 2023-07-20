@@ -8,8 +8,12 @@
 }
 
 body{
-   background-image: linear-gradient(to right, #2F4858, #af43be);
-   background-image: cover;
+   /*background-image: linear-gradient(to right, #2F4858, #af43be);*/
+   background-image: url(../midia/bggeral.png);
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
 .menu {
@@ -215,125 +219,286 @@ body{
 
 
  /* -------------------FOOTER------------------------*/
- footer{
-   color: white;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background:  "#AF43BE"; 
-    padding: 20px 20px;
-    display: flex;
- }
-.nav1 {
-   margin-left: 300px;
-}
-.dicio{
-   font-size: 25px;
-   padding: 10px;
-}
-.turmaT{
-   margin-left: 100px;
-   font-size: 18px;
-   margin: 10px;
-}
-.jornada{
-   font-size: 25px;
-   color: white;
-   height: 40px;
-   text-decoration: none;
+ 
+ footer {
+   color:#ffffff;
+   width: 100%; 
+   min-height: 250px;
+   display: flex;
+   justify-content: center;
+   text-align:start;
 }
 
-.nav2 a {
+/*EDITANDO AS FONTES DO RODAPÉ */
+
+.rodape h4, span, p {
+   padding: 5px;
+}
+.rodape h4 {
    font-size: 18px;
-   color: white;
-   text-decoration: none;
-   list-style: none;
 }
-.sobre{
-   padding: 1px;
-   height: 30px;
-   color: white;
+
+.rodape span{
+   font-size: 15px;
 }
-.area{
-   padding: 1px;
-   color: white;
+
+.rodape p {
+   font-size: 12px;
 }
-.som{
-   margin-bottom: 20px;
-   margin-right: 170px;
+
+.rodape {
+   min-height: auto;
+   width: 100%;
+}
+
+/* DEIXANDO CADA ITEM DO RODAPÉ LADO A LADO*/
+.ladoalado {
+   text-align: top;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   }
+
+.diciotech {
+   max-width: 300px;
+   margin: 20px;
+   padding: 10px;
+}
+
+.redes, .instituicoes, .diciotech, .mobl {
+   margin: 10px;
+   padding: 10px;
+}
+
+.instituicoes {
+   padding: 20px;
+}
+
+/* IMAGENS DE REDES SOCIAIS E SENAC/PORTO */
+
+#senac img {
+   height: 90px;
+   width: 100px;
+}
+
+#portoD img {
+   height: 100px;
+   width: 100px;
+}
+
+#minas img {
+   height: 20px;
+   width: 100px;
+}
+
+.mobile img {
+   margin-top: 10px;
+   height: 40px;
+   width: 100px;
+}
+
+.redes img {
+   width: 25px;
+   margin: 10px;
    display: flex;
 }
-.mais {
-   margin: 3px;
+
+.icons {
+   max-width: 150px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
 }
-.menos{
-   margin: 10px;
+
+/* IMAGENS DE ACESSIBILIDADE */
+.leitor {
+   max-width: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.leitor img {
+   margin-top: 20px;
+   margin-left: 200px;
+   width:50px;
+   height:50px;
+}
+
+.volM{
+   margin-left: 90px;
+}
+
+.volM img, .volm img {
+   margin: 5px;
+   width: 25px;
+   height: 25x;
 }
 
 
 /*-----------------PÁGINA API-------------- */
 
-.Api{
-   background-color: white; 
-   margin-left: 20px;
-   margin-right: 20px;
-   padding: 100px;
+.mainS{
+   min-width: 320px; /* Limitou o conteúdo ao mínimo que fica sem deformar tudo */
+   max-width: 1000px; /* Limitou o conteúdo a 1000px, pra dps centralizar */
+   margin: auto; /* Centralizou o conteúdo */
+   padding: 80px;
+   color: #ffffff;
 }
 .TituloA{
-   padding: 20px 20px 20px 0px;
+   padding-left: 20px;
+   padding-bottom: 10px;
+}
+.apiA{
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+   padding-bottom: 70px;
+   text-align: justify;
+   font-size: 17px;
 }
 .quizN{
-   color: #F47107;
-   padding: 100px 20px 20px 110px;
+   color: #DEFE47;
+   font-size: 25px;
+   margin-bottom: 30px;
 }
-
 /* ESTILIZAÇÃO QUIZ */
 
 .quiz_fullstack{
    display: flex;
    justify-content: space-between;
-   background-color: #DEFE47;
-   border-radius: 30px;
-   padding: 50px 50px 50px 50px;
-   margin-left: 100px;
-   margin-right: 100px;
+   background-color: #2F4858;
+   margin-left: 20px;
+   margin-right: 20px;
+   border-radius: 40px;
+   font-size: 20px;
+}
+.quiz_pergunta{
+   padding-left: 130px;
+   padding-top: 50px;
+   padding-bottom: 50px;
    align-items: center;
-
 }
-
 .afir{
+   padding-bottom: 20px;
 
-   padding: 0px 0px 30px 0px;
 }
+button {
+   border-radius: 10px;
+   margin: 20px 0px 20px;
+   padding: 10px 10px;
+}
+
+button:hover {
+   background-color: #DEFE47;
+ }
 
 
 /*--------------------SOBRE NÓS------------------*/
 
 /*Cor, alinhamento e lergura do TITULO Boas Vindas*/
- .mainSobre{
-   text-align: center;
-   align-items: center;
-   height: 700px;
-   padding: 100px;
 
+.mainSobre{
+   min-width: 320px; /* Limitou o conteúdo ao mínimo que fica sem deformar tudo */
+   max-width: 1000px; /* Limitou o conteúdo a 1000px, pra dps centralizar */
+   margin: auto; /* Centralizou o conteúdo */
+   padding: 140px;
+   color: #ffffff;
+   align-items: center;
  }
  .boasVindas{
    font-size: 25px;
    color: #DEFE47;
-   text-align: center;
-   width: 600px;
-   padding: 20px 10px 20px 200px;
+   margin-bottom: 30px;
  }
  /*Cor, tamanho e todos os alinhamentos do TEXTO de Boas Vindas*/
-.fundoBranco{
-   font-size: 20px;
-   background-color: white;
-   border-radius: 30px;
-   margin-left: 200px;
-   margin-right: 200px;
-   padding: 50px 50px 50px 50px;
+.sobreNos {
+   font-size: 17px;
+   border-radius: 40px;
+   background-color: #2F4858;;
    align-items: center;
-   text-align: center;
+   padding-left: 70px;
+   padding-right: 70px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+
+/*-----------------CSS ÁREA TI-----------------*/
+
+.containerG{
+   min-width: 320px; /* Limitou o conteúdo ao mínimo que fica sem deformar tudo */
+   max-width: 1000px; /* Limitou o conteúdo a 1000px, pra dps centralizar */
+   margin: auto; /* Centralizou o conteúdo */
+   color: #ffffff;
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   line-height: 2;
+}
+.containerEsq{
+   display: flex;
+   color:#DEFE47; 
+   padding-top: 120px;
+    margin-left: auto;
+    margin-right: auto; 
+    line-height: 2;
+
+}
+.containerDir{
+   display: flex;
+   color: #ffffff;
+   padding: 100px 100px 100px 300px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+/*---------------PÁGINA TERMOS DA LETRA A------------------*/
+.letraA {
+   min-width: 320px; /* Limitou o conteúdo ao mínimo que fica sem deformar tudo */
+   max-width: 1000px; /* Limitou o conteúdo a 1000px, pra dps centralizar */
+   margin: auto; /* Centralizou o conteúdo */
+   margin-top: 50px;
+   margin-bottom: 50px;
+   }
+
+#termos li {
+   padding: 5px 10px 5px 10px;
+   margin: 0px 10px 10px 10px;
+}
+
+#termosA {
+   text-align: left;
+   list-style: none;
+   padding: 10px;
+}
+#termosA li a {
+   align-items: center;
+   text-align: left;
+   padding: 10px;
+   text-decoration: none;
+   color: white;
+}
+
+.fundoBranco {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+#termosA {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+}
+.corPreto {
+   box-sizing: border-box;
+   padding: 1rem;
+   margin: 1rem;
+   width: calc((100% / 3) - 2rem); /* calco para descontar a margem da largura do box se aumenta a marge tem que ajustar aqui tb */
 }
