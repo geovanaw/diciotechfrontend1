@@ -1,11 +1,11 @@
 
 // função utilizada para animação digitando na plataforma//
 
-function ativaDigitando(elemento, frase, velocidade) {
-    const arrayTexto = frase.split('');
+function ativaDigitando(elemento, frase, velocidade) { //A função ativaDigitando() simula o efeito de digitação de um texto, exibindo-o letra por letra no elemento HTML especificado. Nessa fun~ção existem 3 parametros.//
+    const arrayTexto = frase.split(''); //transforma a frase em um array de caracteres//
     let textoDigitado = '';
   
-    const digitarProximaLetra = () => {
+    const digitarProximaLetra = () => { //função recursiva que retira a primeira letra do array, adiciona-a ao texto digitado e exibe o texto atualizado no elemento HTML.//
       if (arrayTexto.length === 0) {
         elemento.innerHTML = frase;
         return;
@@ -14,13 +14,13 @@ function ativaDigitando(elemento, frase, velocidade) {
       textoDigitado += arrayTexto.shift();
       elemento.innerHTML = textoDigitado;
   
-      setTimeout(digitarProximaLetra, velocidade);
+      setTimeout(digitarProximaLetra, velocidade); //a função é chamada novamente após um intervalo de tempo (velocidade)//
     };
   
     digitarProximaLetra();
   }
   
-  const titulo = document.querySelector('.digitandohello_world');
+  const titulo = document.querySelector('.digitandohello_world'); //Quando não há mais letras no array, ou seja, todas as letras foram digitadas, a frase completa é exibida no elemento.//
   ativaDigitando(titulo, `<"HELLO WORLD">`, 50);
   
   setTimeout(() => {
@@ -59,14 +59,14 @@ function ativaDigitando(elemento, frase, velocidade) {
 
   /*Função para o Quiz*/
 
-function verificarResposta() {
-  const respostaSelecionada = document.querySelector('input[name="a1"]:checked');
-  const mensagemDiv = document.getElementById('mensagem');
+function verificarResposta() { //é responsável por checar se o usuário selecionou a resposta correta em um formulário HTML//
+  const respostaSelecionada = document.querySelector('input[name="a1"]:checked'); //para encontrar o primeiro elemento de input com o atributo "name" igual a "a1" que esteja marcado, MULTIPLA escolha// 
+  const mensagemDiv = document.getElementById('mensagem'); //é o local onde a mensagem de acerto ou erro será exibida na página.//
 
-  if (respostaSelecionada && respostaSelecionada.getAttribute('valid') !== 'valid') {
-    mensagemDiv.textContent = 'Você acertou! A turma Devas Full Stack SENAC-PE é a melhor.';
+  if (respostaSelecionada && respostaSelecionada.getAttribute('valid') !== 'valid') { //Verifica a resposta e caso positivo, a resposta é considerada correta, e uma mensagem de acerto é exibida na div "mensagem".//
+    mensagemDiv.textContent = 'Você acertou! A turma Devas Full Stack SENAC-PE é a melhor.'; //Mensagem para acerto//
   } else {
-    mensagemDiv.textContent = 'Você errou! A turma Devas Full Stack SENAC-PE é a melhor.';
+    mensagemDiv.textContent = 'Você errou! A turma Devas Full Stack SENAC-PE é a melhor.'; //Caso a resposta selecionada seja incorreta,uma mensagem de erro na mesma div "mensagem".//
   }
 }
 
