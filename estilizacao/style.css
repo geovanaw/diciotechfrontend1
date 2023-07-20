@@ -66,6 +66,9 @@ body{
     
 }
 #searchbar{ 
+   min-width: 320px; /* Limitou o conteúdo ao mínimo que fica sem deformar tudo */
+   max-width: 1000px; /* Limitou o conteúdo a 1000px, pra dps centralizar */
+   margin: auto; 
    display: flex;
    border-radius: 20px;
    padding: 5px;
@@ -73,7 +76,6 @@ body{
    height: 30px;
    border-style: none;
    font-size: 16px;
-   margin-left: 450px;
    justify-content: space-around;
    padding-left:25px;
    background-image: url(./midia/ícone.lupa.png);
@@ -100,6 +102,8 @@ body{
  }
  .alfabeto, li a  { /*CENTRALIZANDO O ALFABETO INTEIRO DO MENU*/
    text-align: center;
+   color:#ffffff;
+   font-size: 18px;
  }
 
  .alfabeto li:hover{
@@ -277,19 +281,8 @@ body{
 
 /* IMAGENS DE REDES SOCIAIS E SENAC/PORTO */
 
-#senac img {
-   height: 90px;
-   width: 100px;
-}
-
-#portoD img {
-   height: 100px;
-   width: 100px;
-}
-
-#minas img {
-   height: 20px;
-   width: 100px;
+.instituicoes img {
+   width: 100%;
 }
 
 .mobile img {
@@ -455,6 +448,11 @@ button:hover {
     margin-left: auto;
     margin-right: auto; 
 }
+
+.containerDir p{
+   font-size: 18px;
+}
+
 
 
 /*---------------PÁGINA TERMOS DA LETRA A------------------*/
