@@ -11,13 +11,13 @@
 
       <div class="logo">
          <a href="index.html">
-         <img src= "../midia/dicio_tech_logo vazada BRANCO Completa.png" width="300">
+         <img src= "../midia/diciotech.png">
          </a>
       </div> 
        
       <section class="acessibilidade">
-         <img src="../midia/iconLeitordetexto.png" width="50">
-         <img src="../midia/iconAcessibilidade.png" width="70">
+         <img src="../midia/iconLeitordetexto.png">
+         <img src="../midia/iconAcessibilidade.png">
       </section>
 
       <nav class="menu">
@@ -27,10 +27,8 @@
        </nav>
 
       <div class ="barraInt">
-     <input id="searchbar" onkeyup="search_palavra()" type="text" name="busca" placeholder="Buscar termos...
-     "> <!--COLOCAR A FUNÇÃO DE PESQUISA-->
-     <button class="botaoAdoc" type="submit"></button> <!--IMAGEM DE PESQUISAR--> 
-      <!--FALTA COLOCAR A IMAGEM DO MICROFONE DENTRO DO INPUT DE PESQUISA, vi q tem como colocar no CSS--></div>
+     <input id="searchbar" onkeyup="search_palavra()" type="text" name="busca" placeholder="Buscar termos..."> <!--COLOCAR A FUNÇÃO DE PESQUISA-->
+   </div>
 
    <div class = "alfabeto">
       <ol class="suggestions"> 
@@ -64,31 +62,42 @@
    </div>
    </header>
 
-<main>
-   <section class="fundoBranco"> <!--Seção inteira de fundo branco-->
-      <h1>Browser</h1>
-      <p>
-      Programa responsável por interpretar o código HTML, CSS e Javascript para exibir conteúdos na internet de forma formatada e interativa.
-      </p>
-      <p>
-         Ao digitar www.google.com na barra de endereços do seu browser e pressionar Enter, o browser enviará uma requisição ao servidor do Google para buscar a página inicial do Google. Em seguida, ele renderizará o conteúdo, incluindo a caixa de pesquisa e os botões, permitindo que você realize pesquisas na web.
-      </p>
+   <main class="mainS">
+      <section class="api"> <!--Parte branca-->
+         <h1 class="TituloA">Browser</h1>
+            <P class="apiA">Programa responsável por interpretar o código HTML, CSS e Javascript para exibir conteúdos na internet de forma formatada e interativa.
+            <br>Ao digitar www.google.com na barra de endereços do seu browser e pressionar Enter, o browser enviará uma requisição ao servidor do Google para buscar a página inicial do Google. Em seguida, ele renderizará o conteúdo, incluindo a caixa de pesquisa e os botões, permitindo que você realize pesquisas na web.
+            </P>
+      
+         </section>
+   <!-- CÓDIGO QUE SERÁ UTILIZADO NA FUNÇÃO JAVASCRIPT DO QUIZ - NÃO ALTERAR SEM AVISO-->
 
-      <section class="quiz"> <!--mesma classe da a_api, fundo verde-->
-      <h1 class="corLaranja">Quiz</h1>
-         <h3>Marque a afirmação correta:</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quos, quo non nobis repellat ex dolores expedita distinctio eos sequi accusantium ipsam. Voluptatum tempore corporis neque pariatur numquam. Nesciunt, laudantium!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, facilis incidunt eius quos error voluptates possimus eos officia ducimus voluptatum maiores, voluptas aut doloribus accusantium rerum ea. Eius, facilis laboriosam.</p>
+      <section class="quiz_fullstack">
+         <section class="quiz_pergunta">
+            <h2 class="quizN"> Quiz</h2>
+            <h4 class="afir">Qual é a melhor turma SENAC-PE?</h4>
+            <!-- precisa colocar a função valid no lugar correto, mas já pode mexer na estilização-->
+               <section id="mensagem" valid="valid">
+               <input type="radio" name="a1">
+               <span>a- Devas Full Stack SENAC-PE</span><br>
+               </section>
+
+               <input type="radio" name="a2">
+               <span>b- Outros</span></br>
+
+               <button onclick="verificarResposta()">Enviar</button>
+
+            </section>
+         </section> 
       </section>
-   </section>
-</main>
+   </main>
 
 <footer class="rodape">
    <section class="ladoalado">
        <div class="instituicoes">
-               <div id="senac"><img src="https://www.pe.senac.br/wp-content/themes/SenacPE/images/images/senac_logo_branco.png" alt="Logo SENAC" > </div>
-               <div id="portoD"><img src="https://www.portodigital.org/_nuxt/img/logo-footer.b1b85ce.svg" alt="Logo Porto Digital"></div>
-               <div id="minas"><img src="https://minas.armazemdacriatividade.org/wp-content/uploads/2021/12/logo-branca-1.png" alt="Logo M.I.N.A.S"></div> 
+               <div id="senac"><img src="../midia/senac.png" alt="Logo SENAC" > </div>
+               <div id="portoD"><img src="../midia/portoD.png" alt="Logo Porto Digital"></div>
+               <div id="minas"><img src="../midia/minas.png" alt="Logo M.I.N.A.S"></div> 
        </div>
 
        <div class="diciotech">
@@ -111,8 +120,8 @@
 
        <div class="mobl">
            <h4>Disponível em mobile</h4>
-               <a href="#"class="mobile"><img src="https://www.dicio.com.br/img/app-store-badge.png" alt="Link Applestore""></a>
-               <a href="#"class="mobile"><img src="https://www.dicio.com.br/img/google-play-badge.png" alt="Link Playstore""></a>
+               <a href="#"class="mobile"><img src="../midia/appstore.png" alt="Link Applestore""></a>
+               <a href="#"class="mobile"><img src="../midia/playstore.png" alt="Link Playstore""></a>
          </div>
          
       <div class="leitorTexto">
@@ -123,5 +132,7 @@
       </section>
 </div>
 </footer>
+
+<script src="../script.js"></script>
 </body>
 </html>
