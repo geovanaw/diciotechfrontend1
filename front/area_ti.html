@@ -10,9 +10,13 @@
    <header class="header">
 
       <div class="logo">
-         <img src= "../midia/dicio_tech_logo vazada BRANCO Completa.png" width="150">
+         <img src= "../midia/dicio_tech_logo vazada BRANCO Completa.png" width="300">
       </div> 
-      
+       
+      <section class="acessibilidade">
+         <img src="../midia/iconLeitordetexto.png" width="50">
+         <img src="../midia/iconAcessibilidade.png" width="70">
+      </section>
 
       <nav class="menu">
            <a href="index.html">Home</a>
@@ -21,13 +25,13 @@
        </nav>
 
       <div class ="barraInt">
-     <input id="searchbar" onkeyup="funcao()" type="text" name="busca" placeholder="Buscar termos...
+     <input id="searchbar" onkeyup="search_palavra()" type="text" name="busca" placeholder="Buscar termos...
      "> <!--COLOCAR A FUNÇÃO DE PESQUISA-->
      <button class="botaoAdoc" type="submit"></button> <!--IMAGEM DE PESQUISAR--> 
       <!--FALTA COLOCAR A IMAGEM DO MICROFONE DENTRO DO INPUT DE PESQUISA, vi q tem como colocar no CSS--></div>
 
    <div class = "alfabeto">
-      <ol> 
+      <ol class="suggestions"> 
          <li><a href="letra_a.html">A</a></li>
          <li><a href="">B</a></li>
          <li><a href="">C</a></li>
@@ -58,75 +62,92 @@
    </div>
    </header>
 
-<main>
-    <section class="containerEsq"> <!--Palavras que ficam no lado esquerdo-->
-    <h1 class="corVerde">Back End </h1> <!--Colocar a cor na classe corVerde-->
-    <h1 class="corVerde">Dados</h1>
-    <h1 class="corVerde">Gestão de Projetos</h1>
-    <h1 class="corVerde">Qualidade</h1>
-    <h1 class="corVerde">Redes e Sistemas</h1>
-    <h1 class="corVerde">UX/UI Design</h1>
-    </section>
+   <main class="containerG">
+      <section class="containerEsq"> <!--Palavras que ficam no lado esquerdo-->
+      <li>
+      <h1 class="corVerde">Back End</h1> <!--Colocar a cor na classe corVerde-->
+      <h1 class="corVerde">Front End</h1>
+      <h1 class="corVerde">Dados</h1>
+      <h1 class="corVerde">UX/UI Design</h1>
+      <h1 class="corVerde">Qualidade</h1>
+      <h1 class="corVerde">Redes e Sistemas</h1>
+      <h1 class="corVerde">Gestão de Projetos</h1>
+     </li> 
+      </section>
 
-    <section class="containerDir"> <!--Palavras que ficam no lado direito-->
-      <h2 class="corBranco">Linguagens de Programação</h2> <!--Colocar a cor na classe corBranco-->
+      <section class="containerDir"> 
+       <li><!--Palavras que ficam no lado direito-->
+        <h2 class="corBranco2">Linguagens de Programação</h2> <!--Colocar a cor na classe corBranco-->
+           <p class="corBranco">JavaScript</p>
+           <p class="corBranco">Python</p>
+           <p class="corBranco">PHP</p>
+           <p class="corBranco">HTML</p>
+           <p class="corBranco">CSS</p>
+           <p class="corBranco">C#</p>
+           <p class="corBranco">C++</p>
+           <p class="corBranco">Java</p>
+           <p class="corBranco">TypeScript</p>
+           <p class="corBranco">Ruby</p>
+           <p class="corBranco">C</p>
+           <p class="corBranco"> Swift</p>
+           <p class="corBranco">GO</p>
+           <p class="corBranco"> SQL</p>
 
-         <h3 class="corBranco">JavaScript</h3>
-         <h3 class="corBranco">Python</h3>
-         <h3 class="corBranco">PHP</h3>
-         <h3 class="corBranco">HTML</h3>
-         <h3 class="corBranco">CSS</h3>
-         <h3 class="corBranco">C#</h3>
-         <h3 class="corBranco">C++</h3>
-         <h3 class="corBranco">Java</h3>
-         <h3 class="corBranco">TypeScript</h3>
-         <h3 class="corBranco">Ruby</h3>
-         <h3 class="corBranco">C</h3>
-         <h3 class="corBranco"> Swift</h3>
-         <h3 class="corBranco">GO</h3>
-         <h3 class="corBranco"> SQL</h3>
-   </section>
-</main>
-<footer>
-   <!--Barra roxa-->
-         <section class="nav1">
-   <!--Titilo do Diciotech no footer-->
-            <h3 class="dicio">Diciotech</h3>
-   <!---------------FIM------------------>
+           <h2 class="corBranco">Ferramentas de Programação</h2> <!--Colocar a cor na classe corBranco-->
+          <p class="corBranco">GitHub</p>
+          <p class="corBranco">VS Code</p>
+          <p class="corBranco">Figma</p>
+          <p class="corBranco">Miro</p>
+          <p class="corBranco">Terminator</p>
+          <p class="corBranco">Slack</p>
+          <p class="corBranco">Code Climate</p>
+          <p class="corBranco">Atom</p>
+          <p class="corBranco">Vim</p>
+          <p class="corBranco">Codeship</p>
+        </li>
 
-   <!--Texto de apresentção do footer-->
-            <p class="turmaT">Nós, alunas da turma afirmativa de Desenvolvimento Full Stack do SENAC-PE, criamos esse dicionário <br> tecnológico para ajudar profissionais em formação que nunca tiveram contato com o inglês.</p>
-         </section>
-   <!-----------------FIM---------------->
+     </section>
+  </main>
+  
+<footer class="rodape">
+   <section class="ladoalado">
+       <div class="instituicoes">
+               <div id="senac"><img src="https://www.pe.senac.br/wp-content/themes/SenacPE/images/images/senac_logo_branco.png" alt="Logo SENAC" > </div>
+               <div id="portoD"><img src="https://www.portodigital.org/_nuxt/img/logo-footer.b1b85ce.svg" alt="Logo Porto Digital"></div>
+               <div id="minas"><img src="https://minas.armazemdacriatividade.org/wp-content/uploads/2021/12/logo-branca-1.png" alt="Logo M.I.N.A.S"></div> 
+       </div>
 
-   <!--SUB-TITULO APOROVEITE A JORNADA "LARANJA"-->
-         <section class="nav2">
-               <h3 class="jornada">Aproveite a jornada</h3>
-   <!--LINK PARA O SOBRE NÓS E Área de TI-->
-               <p class="sobre"><a href="sobre.html">Sobre nós</a></p>
-               <p class="area"><a href="area_ti.html">Áreas de TI</a></p>
-         </section>
-   <!---------------FIM--------------------->
+       <div class="diciotech">
+           <h4>Diciotech</h4>
+               <p><span>Desenvolvido pela primeira turma afirmativa de Desenvolvimento Full Stack do SENAC-PE em parceria com o  Porto Digital.</span></p>
+               <p id="cpr">Copyright © Todos os Direitos Reservados - 2023.</p>
+       </div>
 
-   <!--SECTION DOS ICONES DE ACESSIBILIDADE SOM, AUMENTAR E DIMINUIR-->
+       <div class="redes">
+           <h4>Nos encontre em</h4>
+           <div class="icons">
+               <a href="#"><img src="../midia/instagram.png" alt="Instagram"></a>
+               <a href="#"><img src="../midia/mail.png" alt="E-mail"></a>
+               <a href="#"><img src="../midia/github.png" alt="Github"></a>
+               <a href="#"><img src="../midia/linkedin.png" alt="Linkedin"></a>
+               <a href="#"><img src="../midia/twitter.png" alt="Twitter"></a>
+               <a href="#"><img src="../midia/youtube.png" alt="Youtube"></a>
+           </div>
+       </div>
 
-   <!-- icone do som -->
-
-         <section class="iconsF">
-            <img class="som" src="../midia/ícone.audio.png" alt="icone som" width="50"> 
-            <img class="mais" src="../midia/ícone.volume.png" alt="icon mais" width="20">
-             <img class="menos" src="../midia/icone.volume+.png" alt="icon menos" width="20">
-         </section>
-
-   <!------------FIM------------->
-
-   <!--Icone do mais e menos, ESSE ICONE PRECISA SER MUDADO NÃO ESTÁ BOM-->
-            <!--Colocar os ícones de acessibilidade (VOLUME) E DEPOIS A FUNCIONALIDADE-->
-               <!--Colocar o ícone de diminuir volume-->
-               <!-- <img src="" alt="icone++" width="25">  Colocar o ícone de aumentar volume-->
-   <!---------------FIM------------>
-
-
-   </footer>
+       <div class="mobl">
+           <h4>Disponível em mobile</h4>
+               <a href="#"class="mobile"><img src="https://www.dicio.com.br/img/app-store-badge.png" alt="Link Applestore""></a>
+               <a href="#"class="mobile"><img src="https://www.dicio.com.br/img/google-play-badge.png" alt="Link Playstore""></a>
+         </div>
+         
+      <div class="leitorTexto">
+                <a href="#"class="leitor"><img src="../midia/iconLeitordetexto.png" alt="Ícone leitor de texto"></a>
+                <a href="#"class="volM"><img src="../midia/iconAumentarvolume.png" alt="Ícone aumentar volume"></a>
+                <a href="#"class="volm"><img src="../midia/iconDiminuirvolume.png" alt="Ícone diminuir volume"></a>
+      </div>
+      </section>
+</div>
+</footer>
 </body>
 </html>

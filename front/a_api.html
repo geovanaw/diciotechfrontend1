@@ -3,16 +3,20 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..//estilizacao/style.css">
+    <link rel="stylesheet" href="../estilizacao/style.css">
     <title>Diciotech</title>
  </head>
  <body>
    <header class="header">
 
       <div class="logo">
-         <img src= "midia/dicio_tech_logo vazada azul claro.png" width="100" >
+         <img src= "../midia/dicio_tech_logo vazada BRANCO Completa.png" width="300">
       </div> 
-      
+       
+      <section class="acessibilidade">
+         <img src="../midia/iconLeitordetexto.png" width="50">
+         <img src="../midia/iconAcessibilidade.png" width="70">
+      </section>
 
       <nav class="menu">
            <a href="index.html">Home</a>
@@ -20,11 +24,11 @@
            <a href="area_ti.html">Áreas de TI</a>
        </nav>
 
-       <div class ="barraInt">
-         <input id="searchbar" onkeyup="search_palavra()" type="text" name="busca" placeholder="Buscar palavra..."> <!--Essa é a entrada para funcionar o javascript no campo de busca -->
-         <button class="botaoAdoc" type="submit"></button> <!--IMAGEM DE PESQUISAR--> 
-          <!--FALTA COLOCAR A IMAGEM DO MICROFONE DENTRO DO INPUT DE PESQUISA, vi q tem como colocar no CSS-->
-       </div>
+      <div class ="barraInt">
+     <input id="searchbar" onkeyup="search_palavra()" type="text" name="busca" placeholder="Buscar termos...
+     "> <!--COLOCAR A FUNÇÃO DE PESQUISA-->
+     <button class="botaoAdoc" type="submit"></button> <!--IMAGEM DE PESQUISAR--> 
+      <!--FALTA COLOCAR A IMAGEM DO MICROFONE DENTRO DO INPUT DE PESQUISA, vi q tem como colocar no CSS--></div>
 
    <div class = "alfabeto">
       <ol class="suggestions"> 
@@ -58,81 +62,78 @@
    </div>
    </header>
 
-   <main class="Api">
-      <section class=""> <!--Parte branca-->
+   <main class="mainS">
+      <section class="api"> <!--Parte branca-->
          <h1 class="TituloA">API</h1>
-            <P>As APIs são um conjunto de padrões que fazem parte de uma interface. As APIs permitem a criação de plataformas 
-               de maneira mais simples e prática para desenvolvedores. A partir de APIs, é possível criar softwares, aplicativos, 
+            <P class="apiA">As APIs são um conjunto de padrões que fazem parte de uma interface. As APIs permitem a criação de plataformas 
+               de maneira mais simples e prática para desenvolvedores. <br> <br> A partir de APIs, é possível criar softwares, aplicativos, 
                programas e plataformas diversas. Por exemplo, apps desenvolvidos para celulares Android e iPhone (iOS) são criados a partir de padrões definidos e 
                disponibilizados pelas APIs de cada sistema operacional.</P>
       </section>
-
    <!-- CÓDIGO QUE SERÁ UTILIZADO NA FUNÇÃO JAVASCRIPT DO QUIZ - NÃO ALTERAR SEM AVISO-->
 
-      <div class="quiz_fullstack">
-         <div class="quiz_pergunta">
-            <h2> QUIZ DICIOTECH</h2>
-            <h4>Qual é a melhor turma SENAC-PE?</h4>
-            <div class="quiz_respostas" id="mensagem" valid="valid">
+      <section class="quiz_fullstack">
+         <section class="quiz_pergunta">
+            <h2 class="quizN"> QUIZ DICIOTECH</h2>
+            <h4 class="afir">Qual é a melhor turma SENAC-PE?</h4>
+            <section class="quiz_respostas" id="mensagem" valid="valid">
                <!-- precisa colocar a função valid no lugar correto, mas já pode mexer na estilização-->
-               <div id="mensagem" valid="valid">
+               <section id="mensagem" valid="valid">
                <input type="radio" name="a1">
                <span></span>a- Devas Full Stack SENAC-PE</span><br>
-               </div>
+               </section>
 
                <input type="radio" name="a1">
                <span>b- Outros</span></br>
-               
+
                <button onclick="verificarResposta()">Enviar</button>
 
-            </div>
-         </div> 
-     </div>
+            </section>
+         </section> 
+      </section>
    </main>
 
    
-<footer>
-   <!--Barra roxa-->
-         <section class="nav1">
-   <!--Titilo do Diciotech no footer-->
-            <h3 class="dicio">Diciotech</h3>
-   <!---------------FIM------------------>
-
-   <!--Texto de apresentção do footer-->
-            <p class="turmaT">Nós, alunas da turma afirmativa de Desenvolvimento Full Stack do SENAC-PE, criamos esse dicionário <br> tecnológico para ajudar profissionais em formação que nunca tiveram contato com o inglês.</p>
+   <footer class="rodape">
+      <section class="ladoalado">
+          <div class="instituicoes">
+                  <div id="senac"><img src="https://www.pe.senac.br/wp-content/themes/SenacPE/images/images/senac_logo_branco.png" alt="Logo SENAC" > </div>
+                  <div id="portoD"><img src="https://www.portodigital.org/_nuxt/img/logo-footer.b1b85ce.svg" alt="Logo Porto Digital"></div>
+                  <div id="minas"><img src="https://minas.armazemdacriatividade.org/wp-content/uploads/2021/12/logo-branca-1.png" alt="Logo M.I.N.A.S"></div> 
+          </div>
+   
+          <div class="diciotech">
+              <h4>Diciotech</h4>
+                  <p><span>Desenvolvido pela primeira turma afirmativa de Desenvolvimento Full Stack do SENAC-PE em parceria com o  Porto Digital.</span></p>
+                  <p id="cpr">Copyright © Todos os Direitos Reservados - 2023.</p>
+          </div>
+   
+          <div class="redes">
+              <h4>Nos encontre em</h4>
+              <div class="icons">
+                  <a href="#"><img src="../midia/instagram.png" alt="Instagram"></a>
+                  <a href="#"><img src="../midia/mail.png" alt="E-mail"></a>
+                  <a href="#"><img src="../midia/github.png" alt="Github"></a>
+                  <a href="#"><img src="../midia/linkedin.png" alt="Linkedin"></a>
+                  <a href="#"><img src="../midia/twitter.png" alt="Twitter"></a>
+                  <a href="#"><img src="../midia/youtube.png" alt="Youtube"></a>
+              </div>
+          </div>
+   
+          <div class="mobl">
+              <h4>Disponível em mobile</h4>
+                  <a href="#"class="mobile"><img src="https://www.dicio.com.br/img/app-store-badge.png" alt="Link Applestore""></a>
+                  <a href="#"class="mobile"><img src="https://www.dicio.com.br/img/google-play-badge.png" alt="Link Playstore""></a>
+            </div>
+            
+         <div class="leitorTexto">
+                   <a href="#"class="leitor"><img src="../midia/iconLeitordetexto.png" alt="Ícone leitor de texto"></a>
+                   <a href="#"class="volM"><img src="../midia/iconAumentarvolume.png" alt="Ícone aumentar volume"></a>
+                   <a href="#"class="volm"><img src="../midia/iconDiminuirvolume.png" alt="Ícone diminuir volume"></a>
+         </div>
          </section>
-   <!-----------------FIM---------------->
-
-   <!--SUB-TITULO APOROVEITE A JORNADA "LARANJA"-->
-         <section class="nav2">
-               <h3 class="jornada">Aproveite a jornada</h3>
-   <!--LINK PARA O SOBRE NÓS E Área de TI-->
-               <p class="sobre"><a href="sobre.html">Sobre nós</a></p>
-               <p class="area"><a href="area_ti.html">Áreas de TI</a></p>
-         </section>
-   <!---------------FIM--------------------->
-
-   <!--SECTION DOS ICONES DE ACESSIBILIDADE SOM, AUMENTAR E DIMINUIR-->
-
-   <!-- icone do som -->
-
-         <section class="iconsF">
-            <img class="som" src="../midia/ícone.audio.png" alt="icone som" width="50"> 
-            <img class="mais" src="../midia/ícone.volume.png" alt="icon mais" width="20">
-             <img class="menos" src="../midia/icone.volume+.png" alt="icon menos" width="20">
-         </section>
-
-   <!------------FIM------------->
-
-   <!--Icone do mais e menos, ESSE ICONE PRECISA SER MUDADO NÃO ESTÁ BOM-->
-            <!--Colocar os ícones de acessibilidade (VOLUME) E DEPOIS A FUNCIONALIDADE-->
-               <!--Colocar o ícone de diminuir volume-->
-               <!-- <img src="" alt="icone++" width="25">  Colocar o ícone de aumentar volume-->
-   <!---------------FIM------------>
-
-
+   </div>
    </footer>
-
    <script src="../script.js"></script>
  </body>
  </html>
