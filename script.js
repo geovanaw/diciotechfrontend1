@@ -56,3 +56,18 @@ function ativaDigitando(elemento, frase, velocidade) {
       });
     }
   }
+
+  /*Função para o Quiz*/
+
+function verificarResposta() {
+  const respostaSelecionada = document.querySelector('input[name="a1"]:checked');
+  const mensagemDiv = document.getElementById('mensagem');
+
+  if (respostaSelecionada && respostaSelecionada.getAttribute('valid') !== 'valid') {
+    mensagemDiv.textContent = 'Você acertou! A turma Devas Full Stack SENAC-PE é a melhor.';
+  } else {
+    mensagemDiv.textContent = 'Você errou! A turma Devas Full Stack SENAC-PE é a melhor.';
+  }
+}
+
+
